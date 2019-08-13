@@ -1,0 +1,280 @@
+*{
+	box-sizing: border-box; 
+	/* This makes the widths of elements more consistent
+		Full details here https://css-tricks.com/box-sizing/ */
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	margin: 0px; /* Often browsers have a 5px margin by deafult*/
+	font-family: sans-serif;
+}
+
+/*LAYOUT*/
+
+section{
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+}
+
+.quoteBox{
+	width: 100vw;
+	height: auto;
+	background: #7f9fd3;
+}
+
+.quote1{
+	color: white;
+	font-size: 50px;
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+	padding-left: 10vw;
+	padding-right: 10vw;
+	text-align: center;
+}
+
+.imgBox{
+	display: inherit;
+	width:70%;
+	margin-left: 15%;
+	padding-top: 3vh;
+}
+
+.textBox{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width: 20vw;
+	margin-left: 15vw;
+}
+
+.columnColour1{
+	width: 40%;
+	float: left;
+	margin-right: 20%;
+}
+
+.columnColour2{
+	width: 40%;
+	float: left;
+}	
+
+
+/*IMAGES*/
+
+.logoLarge{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 15vh;
+	padding-bottom: 10vh;
+
+	max-height: 100vh;
+	max-width: 100vw;
+	width: auto;
+	height: auto;
+}
+
+.logoSmall{
+	margin-left: 1vw;
+	margin-right: auto;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+
+	max-height: 50vh;
+	max-width: 50vw;
+	width: auto;
+	height: auto;
+}
+
+.logoSmallSmall{
+	margin-left: 1vw;
+	margin-right: auto;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+
+	max-height: 50vh;
+	max-width: 50vw;
+	width: auto;
+	height: auto;
+}
+
+.googleIMG{
+	width: 100%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.colourIMG1{
+	width: 75%;
+}
+
+.colourIMG2{
+	width: 75%;
+}
+
+/*NAV BAR*/
+
+nav{
+	width: 100%;
+	height: 60px;
+	position: fixed;
+	background-color: #707070; /* grey backg*/
+}
+
+nav a, nav h3{
+	float: left;
+	margin: 0px;
+	line-height: 60px;
+	margin-left: 1em;
+	margin-right: 1em;
+	font-family: 'Gotham-Light', sans-serif;
+	color: white;
+	text-decoration: none;
+}
+
+/*BUTTONS*/
+
+.buttonStyle{
+  	border: none;
+  	outline: none;
+  	display: block;
+  	height: auto;
+  	width: 100%;
+  	cursor: pointer;
+  	transition: transform .2s;
+}
+
+.buttonStyle:hover {
+  	transform: scaleY(1.05); 
+}
+
+button h1{
+	color: white;
+	text-decoration: none;
+}
+
+/*MODALS*/
+/*From w3schools*/
+
+ .modal{
+  	display: none;
+  	position: fixed;
+  	z-index: 1;
+  	left: 0;
+  	top: 0;
+  	width: 100vw;
+  	height: 100vh;
+  	overflow-y: auto;
+  	background-color: rgb(0,0,0);
+  	background-color: rgba(0,0,0,0.4);
+  	-webkit-animation-name: fadeIn; 
+  	-webkit-animation-duration: 0.4s;
+  	animation-name: fadeIn;
+  	animation-duration: 0.4s
+}
+
+.modal-content {
+	background-color: #7f9fd3; 
+	border: none;
+  	width: 40%;
+  	color: white;
+
+  	margin: auto;
+  	margin-top: 30vh;
+  	padding: 30px;
+  	padding-left: 45px;
+  	padding-right: 55px;
+
+}
+
+.modalGrid{
+	display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 20px;
+    padding: 1%;
+}
+
+/*MODAL CLOSE*/
+
+.close{
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: normal;
+}
+
+.close: hover,
+.close: focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/*TYPE*/
+
+h1{
+	font-family: 'YesevaOne-Regular', serif;
+	text-align: left;
+	font-size: 100px;
+}
+
+h2{
+	font-family: 'Gotham-Bold', sans-serif;
+	text-align: left;
+	font-size: 45px;
+}
+
+p{
+	font-family: 'Gotham-Light', sans-serif;
+	text-align: left;
+	font-size: 20px;
+}
+
+a{
+  text-decoration: none;
+}
+
+i{
+	font-family: 'Gotham-Light', sans-serif;
+	text-align: left;
+	font-style: italic;
+	font-size: 15px;
+	display: block;
+	padding-top: 1vh;
+}
+
+nav a:hover{
+  color: #c4c4c4; /*dark grey hover*/
+}
+
+span{
+	color: #0511F2;
+}
+
+span:hover{
+	cursor: pointer;
+}
+
+/*FONTS*/
+
+@font-face{
+  	font-family: 'YesevaOne-Regular';
+	src: url('YesevaOne-Regular.ttf');
+  	font-weight: normal;
+}
+@font-face{
+  	font-family: 'Gotham-Bold';
+  	src: url('Gotham-Bold.otf');
+  	font-weight: normal;
+}
+
+@font-face{
+  	font-family: 'Gotham-Light';
+  	src: url('Gotham-Light.otf');
+  	font-weight: normal;
+}
