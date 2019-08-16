@@ -15,6 +15,10 @@ body{
 
 /*LAYOUT*/
 
+.h1Padding{
+	padding-top:50px;
+}
+
 section{
 	max-width: 1000px;
 	margin-left: auto;
@@ -23,10 +27,24 @@ section{
 	margin-bottom: 10vh;
 }
 
-.quoteBox{
+.sectionMarginTop{
+	margin-top: 0px;
+}
+
+.sectionMarginBottom{
+	margin-bottom: 3vh;
+}
+
+.quoteBox1{
 	width: 100vw;
 	height: auto;
 	background: #7f9fd3;
+}
+
+.quoteBox2{
+	width: 100vw;
+	height: auto;
+	background: #8D82BE;
 }
 
 .quote1{
@@ -52,17 +70,79 @@ section{
 	margin-left: 15vw;
 }
 
+/*Grids and columns*/
+
+.g-row{
+	width: 100%;
+	overflow: hidden;
+}
+
+.g-row img{
+	width: 100%; 
+}
+
 .columnColour1{
+	/*width: 40%;*/
 	width: 40%;
-	float: left;
-	margin-right: 20%;
+	float:left;
+	/*margin-right: 20%;*/
 }
 
 .columnColour2{
+	/*width: 40%;*/
 	width: 40%;
-	float: left;
+	margin-left:20%;
+	float:left;
+	
 }	
 
+
+.personaColumn1{
+	width: 20%;
+	float: left;
+	margin-right: 5%;
+}
+
+.personaColumn2{
+	width: 20%;
+	float: left;
+	margin-right: 5%;
+}
+
+.personaColumn3{
+	width: 20%;
+	float: left;
+	margin-right: 5%;
+}
+
+.personaColumn4{
+	width: 20%;
+	float: left;
+}
+
+
+.adColumn1{
+	width: 40%;
+	float: left;
+	margin-right: 5%;
+}
+
+.adColumn2{
+	width: 40%;
+	float: left;
+}
+
+
+.infoColumn1{
+	width: 45%;
+	float: left;
+	margin-right: 5%;
+}
+
+.infoColumn2{
+	width: 50%;
+	float: left;
+}
 
 /*IMAGES*/
 
@@ -108,12 +188,30 @@ section{
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.colourIMG1{
+.colourIMG{
 	width: 75%;
 }
 
-.colourIMG2{
+.personaIMG{
 	width: 75%;
+}
+
+.advertisementIMG{
+	width: 100%;
+	padding-bottom: 5vh;
+}
+
+.advertisementRef{
+	width: 90%;
+}
+
+.mockupIMG{
+	width: 100%;
+	padding-top: 5vh;
+}
+
+.mockupRef{
+	width: 40%;
 }
 
 /*NAV BAR*/
@@ -217,6 +315,11 @@ button h1{
 
 /*TYPE*/
 
+#test{
+
+	height: 20px;
+}
+
 h1{
 	font-family: 'YesevaOne-Regular', serif;
 	text-align: left;
@@ -242,7 +345,7 @@ a{
 i{
 	font-family: 'Gotham-Light', sans-serif;
 	text-align: left;
-	font-style: italic;
+	font-style: normal;
 	font-size: 15px;
 	display: block;
 	padding-top: 1vh;
@@ -258,6 +361,22 @@ span{
 
 span:hover{
 	cursor: pointer;
+}
+
+.personaColumn1>p{
+	text-align: center;
+}
+
+.personaColumn2>p{
+	text-align: center;
+}
+
+.personaColumn3>p{
+	text-align: center;
+}
+
+.personaColumn4>p{
+	text-align: center;
 }
 
 /*FONTS*/
